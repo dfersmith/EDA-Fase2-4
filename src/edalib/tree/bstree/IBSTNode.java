@@ -2,12 +2,10 @@ package edalib.tree.bstree;
 
 import edalib.list.IList;
 
-public interface IBSTNode<K extends Comparable<K>, E> {
+public interface IBSTNode extends INode<K,E> {
 	public K getKey();
 	public E getElement();
 	public IBSTNode<K, E> getParent();
-	public IBSTNode<K, E> getLeftChild();
-	public IBSTNode<K, E> getRightChild();
 	public boolean hasLeftChild();
 	public boolean hasRightChild();
 	public boolean isInternal();

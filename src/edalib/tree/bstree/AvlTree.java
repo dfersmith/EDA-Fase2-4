@@ -1,7 +1,8 @@
+
 package edalib.tree.bstree;
 
 
-public class AvlTree<K extends Comparable<K>, E> extends BSTree<K, E> {
+public class AvlTree<K extends Comparable<K>, E> implements IAvITree<K, E> {
 	@Override
 	public AvlNode<K, E> getRoot() {
 		return (AvlNode<K, E>) root;
