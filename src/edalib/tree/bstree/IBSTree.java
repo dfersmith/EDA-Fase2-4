@@ -2,11 +2,7 @@ package edalib.tree.bstree;
 
 import edalib.list.IList;
 
-public interface IBSTree<K extends Comparable<K>, E>{
-	
-	public IBSTNode<K,E> getRoot() ;
-
-	public void insert(K key, E elem);
+public interface IBSTree extends ITree<K ,E>{
 
 	public void remove(K key);
 	

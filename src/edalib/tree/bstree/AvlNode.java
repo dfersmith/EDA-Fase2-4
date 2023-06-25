@@ -1,7 +1,7 @@
 package edalib.tree.bstree;
 
 
-public class AvlNode<K extends Comparable<K>, E> extends BSTNode<K, E> {
+public class AvlNode<K extends Comparable<K>, E> implements IAvlNode<K, E> {
 	public AvlNode(K key, E elem) {
 		super(key, elem);
 	}
